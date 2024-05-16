@@ -1,3 +1,4 @@
+# Versione vecchia del Dockerfile (è stata una tortura cercare come fare in questo modo btw funziona)
 FROM ubuntu
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN apt-get update -y
