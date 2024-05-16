@@ -17,7 +17,7 @@ client.on("ready", (c)=>{
     channel.send('Server ready to edge!\n'+ 'Started at: ' + currentTime.toUTCString())
     setInterval(()=>{
     channel.send("Server keeps edging!")
-    }, 30000)
+    }, 600000)
 })
 
 client.on("messageCreate", (message)=>{
@@ -26,6 +26,12 @@ client.on("messageCreate", (message)=>{
     }
     if(message.content.includes("rizz")){
         message.reply("rizz")
+    }
+    if(message.content.includes("goon")){
+        message.reply("goon")
+    }
+    if(message.content.length > 25){
+        message.reply("bro keeps yapping :skull:")
     }
 })
 
